@@ -1,0 +1,31 @@
+{
+  "name": "fulfillment",
+  "version": "1.0.0",
+  "main": "dist/app.js",
+  "license": "MIT",
+  "scripts": {
+    "build": "tsc -b",
+    "watch": "tsc -w",
+    "start": "node ./dist/app.js",
+    "nodemon": "nodemon ./dist/app.js",
+    "tunnel": "ngrok http 8080"
+  },
+  "dependencies": {
+    "@google-cloud/dialogflow": "^2.0.0",
+    "@types/cors": "^2.8.6",
+    "@types/dialogflow-fulfillment": "^0.6.0",
+    "axios": "^0.19.2",
+    "cors": "^2.8.5",
+    "dialogflow-fulfillment": "github:marceldillen/dialogflow-fulfillment-nodejs#master",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "express-basic-auth": "^1.2.0",
+    "google-auth-library": "^6.0.5",
+    "moment": "^2.26.0",
+    "ngrok": "^3.3.0",
+    "node-fetch": "^2.6.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.4"
+  }
+}
